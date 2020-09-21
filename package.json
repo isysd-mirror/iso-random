@@ -29,6 +29,8 @@
     "iso-read-random": "../iso-read-random",
     "iso-stream": "../iso-stream",
     "iso-util": "../iso-util",
+    "iso-validators": "../iso-validators",
+    "iso-errors": "../iso-errors",
     "esm": "../esm"
   },
   "peerDependencies": {
