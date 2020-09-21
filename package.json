@@ -35,6 +35,7 @@
     "gpm": "https://github.com/IonicaBizau/gpm.git"
   },
   "devDependencies": {
+    "iso-assert": "../iso-assert",
     "iso-test": "../iso-test"
   },
   "readme": "README.md",

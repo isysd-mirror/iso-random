@@ -1,6 +1,7 @@
 before_install:
   - npm i -g https://github.com/IonicaBizau/gpm.git
   - gpm -n .. -t .. -u https -d 1 -i iso-test
+  - gpm -n .. -t .. -u https -d 1 -i iso-assert
 matrix:
   include:
   - os: linux
@@ -40,6 +41,8 @@ matrix:
       - choco install googlechrome
       - npm i -g https://github.com/IonicaBizau/gpm.git
       - gpm -n .. -t .. -u https -d 1 -i iso-test
+      - gpm -n .. -t .. -u https -d 1 -i iso-assert
+
 # 
 # Firefox and Chromium not working on Windows, for some reason :/
 #
