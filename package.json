@@ -1,0 +1,44 @@
+{
+  "name": "iso-random",
+  "version": "0.4.0",
+  "description": "Cryptographically secure random number generator using `/dev/urandom` with fallback to node's `crypto` and finally to `window.crypto || window.mscrypto`.",
+  "main": "random.node.js",
+  "module": "random.js",
+  "scripts": {
+    "test": "iso-test ./test.js",
+    "preinstall": "gpm -n .. -t .. -u https -d 1 -i .",
+    "postinstall": "node -e \"try { require('../esm/esm.js')(module); } catch (e) {require('child_process').execSync('npm i', {cwd: require('path').join('..', 'esm')})}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isysd-mirror/iso-random.git"
+  },
+  "homepage": "https://github.com/isysd-mirror/iso-random/",
+  "keywords": [
+    "isomorphic",
+    "guld",
+    "random",
+    "crypto"
+  ],
+  "author": "isysd",
+  "license": "MIT",
+  "dependencies": {
+    "always-global": "../always-global",
+    "iso-process": "../iso-process",
+    "iso-randombytes": "../iso-randombytes",
+    "iso-read-random": "../iso-read-random",
+    "iso-stream": "../iso-stream",
+    "iso-util": "../iso-util",
+    "esm": "../esm"
+  },
+  "peerDependencies": {
+    "gpm": "https://github.com/IonicaBizau/gpm.git"
+  },
+  "devDependencies": {
+    "iso-test": "../iso-test"
+  },
+  "readme": "README.md",
+  "engines": {
+    "node": ">=7"
+  }
+}
