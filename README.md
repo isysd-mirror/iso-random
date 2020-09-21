@@ -1,5 +1,7 @@
 # random
 
+[![Build Status](https://travis-ci.org/isysd-mirror/iso-random.svg?branch=master)](https://travis-ci.org/isysd-mirror/iso-random)
+
 Cryptographically secure random number generator using `/dev/urandom` with fallback to node's `crypto` and finally to `window.crypto || window.mscrypto`.
 
 ### Usage
@@ -24,7 +26,7 @@ var time = randTimestamp(date.now()/1000 - 10000, date.now()/1000)
 ##### Node
 
 ```
-import { haystack, randBuffer, randStr, randInt } from '../random/random.js'
+import { haystack, randBuffer, randStr, randInt } from '../iso-random/random.js'
 ```
 
 ### License
